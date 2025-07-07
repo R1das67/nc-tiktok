@@ -56,6 +56,6 @@ async def on_ready():
     print(f"✅ Bot läuft als {client.user}")
     client.loop.create_task(check_all_users())
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     keep_alive()  # Starte den kleinen Webserver (für UptimeRobot)
     client.run(TOKEN)
