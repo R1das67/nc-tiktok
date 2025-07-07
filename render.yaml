@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tiktok-discord-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: DISCORD_TOKEN
+        value: dein_discord_bot_token
